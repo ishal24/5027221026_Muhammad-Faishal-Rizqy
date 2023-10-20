@@ -1,5 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>5027221026</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
 
+    <body>
+        <!-- user -->
+        <div class="container mb-5" onload="userAPI();">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" id="nama">name</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" id="posisi">position</h6>
+                    <h7 class="card-subtitle mb-4 text-muted">-- <span id="kantor">company</span></h7>
+                    <h6 class="card-title mb-1 justify-content-center" ><span>following</span>  <span>followers</span></h6>
+                    <h7 class="card-subtitle mb-5 justify-content-center" ><span id="following">count</span>     <span id="followers">count</span></h7>
 
-<script src="5027221026.js"></script>
+                    <div class="row">
+                        <div class="col">
+                            <h7 class="card-subtitle mb-2" id="email">email</h7>
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h7 class="card-subtitle mb-2" id="nomor">phone</h7>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h7 class="card-subtitle mb-2" id="alamat">address</h7>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- product -->
+        <div class="container mb-5" onload="productAPI();">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <img class="card-img-top" id="gambar" alt="gambarproduk">
+                    <h5 class="card-title mb-2" id="nama">nama produk</h5>
+                    <h6 class="card-subtitle mb-2" id="harga">ID5050 <span class="text-danger" id="diskon">diskon</span></h6>
+                    <h6 class="card-subtitle text-muted" id="nilai">rating</h6>
+                    <h6 class="card-subtitle text-muted" id="view">view</h6>
+                </div>
+              </div>
+        </div>
+
+        <!-- price table -->
+        <div class="container mb-5" onload="ptableAPI();">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-2" id="pnama">nama produk</h5>
+                    <h5 class="card-subtitle mb-2 text-muted" id="pharga">ID5050</h5>
+                    <h7 class="card-subtitle mb-4 text-muted">-- <span id="kantor">Features</span></h7>
+                    <h6 class="card-subtitle" id="feat">feat</h6>
+                </div>
+              </div>
+        </div>
+
+    </body>
+
+    <script src="5027221026.js"></script>
+</html>
